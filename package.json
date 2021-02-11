@@ -1,0 +1,26 @@
+{
+  "name": "food",
+  "version": "1.0.0",
+  "description": "A nutrition analysis database developed from the USDA Food data",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kingram6865/food.git"
+  },
+  "keywords": [],
+  "author": "Ken Ingram <ken.ingram@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kingram6865/food/issues"
+  },
+  "homepage": "https://github.com/kingram6865/food#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mysql2": "^2.2.5",
+    "pug": "^3.0.0"
+  }
+}

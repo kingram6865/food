@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Food Data
+  body
+    h1 Nutrient Values for => [ #{data[0].long_desc} ]
+
+    table
+      - var list = data
+      each item in list
+        tr
+        - 
+        if item.nutr_desc === 'Protein'
+            td= item.nutr_desc
+            td!= item.nutr_val + " " + item.units 
+        else
+            td= item.nutr_desc
+            td!= item.nutr_val + " " + item.units           

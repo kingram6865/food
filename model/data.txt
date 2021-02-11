@@ -1,0 +1,12 @@
+select * from foods where long_desc like % %
+
+select b.nutr_val, a.units, a.nutr_desc, a.systematic_name, a.isomer_name, a.fatty_acid_type FROM nutrient_definition a, nutrient_data b where a.nutr_no = b.nutr_no and b.ndb_no=44005
+
+select c.*, b.nutr_val, a.units, a.nutr_desc, a.systematic_name, a.isomer_name, a.fatty_acid_type FROM nutrient_definition a, nutrient_data b, foods c where c.ndb_no = b.ndb_no and a.nutr_no = b.nutr_no and c.ndb_no=?;
+
+
+food/groups
+food/group/:id
+food/group/:name
+food/group/:id/foods
+food/group/:name/foods

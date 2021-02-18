@@ -16,8 +16,8 @@ function isFat(data) {
   } else {
     // console.log(`isFat Line 10: ${JSON.stringify(data)}`)
     output = {
-      [index]: {
-        tagname: data[index].tagname,
+      [data[index].tagname]: {
+        description: index,
         value: data[index].value,
         units: data[index].units
       }
